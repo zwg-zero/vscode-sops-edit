@@ -6,10 +6,10 @@ export class EditorContext {
     public static set(editor:TextEditor|undefined, filePool: FilePool) : void {
         if (editor === undefined || editor === null) {
             this._setButtons(false, false);
+        } else {
+            // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+            void this._setAsync(editor, filePool);
         }
-
-        // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-        void this._setAsync(editor!, filePool);
     }
 
     private static async _setAsync(editor:TextEditor, filePool: FilePool) : Promise<void> {

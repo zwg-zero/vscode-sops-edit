@@ -97,7 +97,7 @@ export class FilePool {
         this._excludedFilePaths.push(tempFile.path);
 
         //await vscode.commands.executeCommand('workbench.action.closeActiveEditor');
-        const out = await f.decryptToTmpFile(encryptedFile, tempFile);
+        const out = await f.decryptToTmpFileV2(encryptedFile, tempFile);
 
         if (out.stderr) {
             // on error: cancel
