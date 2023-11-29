@@ -1,3 +1,4 @@
+# Forked from https://github.com/ShipitSmarter/vscode-sops-edit to add aws MFA supporting
 # SOPS easy edit
 
 ![SOPS edit use gif](https://raw.githubusercontent.com/shipitsmarter/vscode-sops-edit/main/img/sops_edit_use_gif.gif)
